@@ -2,30 +2,52 @@
     ViewData("Title") = "Home Page"
 End Code
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
 
+<style>
+
+
+    p.outset {
+        border-bottom: 1px solid grey;
+    }
+</style>
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    <div class="col-md-12">
+        <h2></h2>
+
+        <p><a class="btn btn-default" onclick="test()">Tampilkan</a></p>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <div class="col-md-4" style="height:350px;width:350px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+        <h5>Peribahasa hari ini :</h5>
+
+        Gajah mati meninggalkan gadingnya, macan mati meninggalkan belangnya, manusia mati meninggalkan namanya
+        <div></div>
+        <i style="font-size:10px">Posted: Thu Jan 01 2004 01:45:52 GMT+0700 (SE Asia Standard Time)</i>
+        <p class="outset"></p>
+        <h5>Peribahasa hari ini :</h5>
+
+        Sejelek-jeleknya pemimpin pasti punya anak buah, sebaik-baiknya pemimpin pasti punya musuh
+        <div></div>
+        <i style="font-size:10px">Posted: Thu Jan 01 2004 01:45:53 GMT+0700 (SE Asia Standard Time)</i>
+        <p class="outset"></p>
+        <h5>Peribahasa hari ini :</h5>
+
+        Bagai kerakap di atas batu, hidup segan mati tak mau
+        <div></div>
+        <i style="font-size:10px">Posted: Thu Jan 01 2004 01:45:54 GMT+0700 (SE Asia Standard Time)</i>
+        <p class="outset"></p>
+        <h5 id="satu"></h5>
+        <p id="p1"></p>
+        <div></div>
+        <i id="i1"  style="font-size:10px"></i>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+
+
 </div>
+<script>
+
+    function test() {
+        document.getElementById("satu").innerHTML = "Peribahasa hari ini :";
+        document.getElementById("p1").innerHTML = "Bagai air diatas daun talas";
+        document.getElementById("i1").innerHTML = "Posted: Thu Jan 01 2004 01:45:55 GMT+0700 (SE Asia Standard Time)";
+    }
+</script>
